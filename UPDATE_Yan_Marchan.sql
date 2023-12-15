@@ -5,10 +5,9 @@ SET rental_duration = 21, -- 3 weeks
 WHERE title = 'Example Movie';
 
 -- Select and update a customer with at least 10 rentals and 10 payments
--- Replace 'YourFirstName', 'YourLastName', and the condition for selecting an address
 UPDATE customer
-SET first_name = 'YourFirstName',
-    last_name = 'YourLastName',
+SET first_name = 'Yan',
+    last_name = 'Marchan',
     address_id = (SELECT address_id FROM address WHERE /* condition to select an address */),
     create_date = CURRENT_DATE
 WHERE customer_id IN (
